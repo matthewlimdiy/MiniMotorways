@@ -1,6 +1,6 @@
 # **MiniMotorways ESP32 Project**
 
-This project is an ESP32-based application for controlling a servo motor and fetching traffic data using the TomTom API. It includes a webserver for configuring Wi-Fi, servo settings, and TomTom API details.
+This project is an ESP32-based application for controlling a servo motor and fetching traffic data using the TomTom API. It includes a webserver for configuring Wi-Fi, servo settings, and TomTom API details. It is designed to be used with my MiniMotorways project.
 
 Check out my youtube video for the full project!
 
@@ -11,8 +11,6 @@ Check out my youtube video for the full project!
 - Webserver for configuring Wi-Fi, servo, and API settings.
 - Stores configuration in NVS (Non-Volatile Storage) for persistence across reboots.
 
----
-
 ## **Requirements**
 - **Hardware**:
 
@@ -22,8 +20,6 @@ Check out my youtube video for the full project!
   - [PlatformIO](https://platformio.org/) for building and flashing the firmware.
   - [Python](https://www.python.org/) with `esptool` installed for manual flashing.
   - A TomTom API key for fetching traffic data.
-
----
 
 ## **Installation**
 
@@ -42,7 +38,7 @@ Check out my youtube video for the full project!
     python -m esptool --chip esp32-c3 --port <COM_PORT> --baud 460800 write_flash -z 0x1000 firmware.bin
 7. Once the flashing process is complete, the ESP32 will reboot and start running the firmware.
 
-#### **Configuration**
+### **Configuration**
 1. After flashing the firmware, you should see a Wi-Fi SSID called `MiniMotorways`:
 
     ![wifi](resources/wifi.png)
@@ -81,8 +77,6 @@ Check out my youtube video for the full project!
 python -m esptool --chip esp32-c3 --port <COM_PORT> erase_flash
 ```
 
----
-
 ## **Contributing**
 
 If you'd like to help maintain the project, fix bugs, or add new features, hereâ€™s how you can get started:
@@ -116,7 +110,6 @@ If you'd like to help maintain the project, fix bugs, or add new features, hereâ
      ```
    - Open a pull request on the original repository and provide a clear description of your changes.
 
-7. **Contact for Collaboration**:
-   - If you'd like to help maintain the project, email me at **[your-email@example.com]** with your GitHub profile.
+## **Contact for Collaboration**
 
----
+   If you'd like to help maintain and improve the project, email me at **matthewlimdiy@gmail.com** with your GitHub profile.
