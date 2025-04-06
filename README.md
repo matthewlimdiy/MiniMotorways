@@ -30,13 +30,14 @@ Check out my youtube video for the full project!
    ```bash
    pip install esptool
 4. Connect your ESP32 board to your computer via USB.
-5. Identify the COM port (e.g., COM3 on Windows or /dev/ttyUSB0 on Linux/Mac). You can find this in your device manager. In my case
-    -  ![device-manager](resources/device_manager.png)
-6. Navigate to the directory where you downloaded the `.bin` file.
-7. Flash the firmware, replace <COM_PORT> with the port where your ESP32 is connected (e.g., COM3 or /dev/ttyUSB0).
+5. Identify the COM port (e.g., COM3 on Windows or /dev/ttyUSB0 on Linux/Mac). You can find this in your device manager. In my case my port is COM33
+
+   ![device-manager](resources/device_manager.png)
+7. Navigate to the directory where you downloaded the `.bin` file.
+8. Flash the firmware, replace <COM_PORT> with the port where your ESP32 is connected (e.g., COM3 or /dev/ttyUSB0).
     ```bash
     python -m esptool --chip esp32-c3 --port <COM_PORT> --baud 460800 write_flash -z 0x1000 firmware.bin
-8. Once the flashing process is complete, the ESP32 will reboot and start running the firmware.
+9. Once the flashing process is complete, the ESP32 will reboot and start running the firmware.
 
 ### **Configuration**
 1. After flashing the firmware, you should see a Wi-Fi SSID called `MiniMotorways`:
