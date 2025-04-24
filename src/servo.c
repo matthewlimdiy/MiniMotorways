@@ -55,7 +55,7 @@ void move_servo(int start_angle, int end_angle, int speed, int servo_pin, int mi
     }
 
     int step = (start_angle < end_angle) ? 1 : -1;
-    int delay = (11 - speed) * 10; // Delay in milliseconds
+    int delay = (11 - speed) * 20; // Delay in milliseconds
 
     for (int angle = start_angle; angle != end_angle + step; angle += step) {
         uint32_t pulse_width = calculate_pulse_width(angle, min_pulse, max_pulse);

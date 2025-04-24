@@ -2,6 +2,8 @@
 
 This project is an ESP32-based application for controlling a servo motor and fetching traffic data using the TomTom API. It includes a webserver for configuring Wi-Fi, servo settings, and TomTom API details. It is designed to be used with my MiniMotorways project.
 
+![thumbnail](resources/thumbnail.jpg)
+
 Check out my youtube video for the full project!
 
 
