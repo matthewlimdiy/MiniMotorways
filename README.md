@@ -38,7 +38,7 @@ Check out my youtube video for the full project!
 7. Navigate to the directory where you downloaded the `.bin` file.
 8. Flash the firmware, replace <COM_PORT> with the port where your ESP32 is connected (e.g., COM3 or /dev/ttyUSB0).
     ```
-    python -m esptool --chip esp32-c3 --port COM3 --baud 460800 write_flash -z 0x0000 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
+    python -m esptool --chip esp32-c3 --port <COM_PORT> --baud 460800 write_flash -z 0x0000 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
       ```
 9. Once the flashing process is complete, the ESP32 will reboot and start running the firmware.
 
